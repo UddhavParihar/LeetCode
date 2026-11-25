@@ -26,13 +26,13 @@ public:
 
             r++;
 
-            ma = max(ma,(r-l+1));
+            ma = max(ma,(r-l));
         }
 
         if(ma == INT_MIN){
             return 0;
         }else{
-            return ma-2;
+            return ma-1;
         }
     }
 };
